@@ -256,20 +256,18 @@ class FabCircularMenuState extends State<FabCircularMenu>
     _translationY =
         ((_screenHeight - widget.fabSize) / 2 - _marginV) * widget.alignment.y;
 
-    if (_colorAnimation == null || !kReleaseMode) {
-      _colorCurve = CurvedAnimation(
-          parent: _animationController,
-          curve: Interval(
-            0.0,
-            0.4,
-            curve: widget.animationCurve,
-          ));
-      _colorAnimation = ColorTween(begin: _fabCloseColor, end: _fabOpenColor)
-          .animate(_colorCurve as Animation<double>)
-            ..addListener(() {
-              setState(() {});
-            });
-    }
+    _colorCurve = CurvedAnimation(
+        parent: _animationController,
+        curve: Interval(
+          0.0,
+          0.4,
+          curve: widget.animationCurve,
+        ));
+    _colorAnimation = ColorTween(begin: _fabCloseColor, end: _fabOpenColor)
+        .animate(_colorCurve as Animation<double>)
+          ..addListener(() {
+            setState(() {});
+          });
   }
 
   void open() {
