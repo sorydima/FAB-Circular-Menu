@@ -12,7 +12,7 @@ Inspired by [Mayur Kshirsagar](https://dribbble.com/mayurksgr)'s great [FAB Micr
 
 ## Installation
 
-Just add `fab_circular_menu` to your [pubspec.yml](https://flutter.io/using-packages/) file
+Just add `fab_circular_menu` to your [pubspec.yml](https://flutter.io/using-packages/) file.
 
 ```yml
 dependencies:
@@ -105,4 +105,4 @@ class MyApp extends StatelessWidget {
 
 ## Contributing
 
-I will be very happy if you contribute to this project, please submit a PR 😁
+I will be very happy if you contribute to this project, please submit a PR. 😁
